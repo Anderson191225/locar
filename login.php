@@ -19,10 +19,10 @@
                             </div>
                             <button>&#9776;</button>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><a href="">Carros</a></li>
                                 <li><a href="">Login</a></li>
-                                <li><a href="cadastro-usuario.html">Cadastre-se</a></li>
+                                <li><a href="cadastro-usuario.php">Cadastre-se</a></li>
                             </ul>
                         </nav>
                     

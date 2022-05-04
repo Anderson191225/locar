@@ -1,3 +1,26 @@
+<?php
+    if(isset($_POST['submit']))
+    {    
+ 
+
+    include_once('config.php');
+
+    $nome = $_POST['nome'];
+    $cpf = $_POST['cpf'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $funcionario = $_POST['opicao'];
+    $data_nasc = $_POST['data_nascimento'];
+    $cidade = $_POST['cidade'];
+    $bairro = $_POST['bairro'];
+    $rua = $_POST['rua'];
+    $numero = $_POST['numero'];
+    $senha = $_POST['senha'];
+    
+    $result = mysqli_query($conexao, "INSERT INTO usuario (nome, email, telefone, funcionario, cidade, rua, numero, bairro, cpf, senha, data_nascimento)VALUES ('$nome','$email','$telefone','$funcionario','$cidade','$rua','$numero','$bairro','$cpf','$senha','$data_nasc')");
+
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -19,9 +42,9 @@
                             </div>
                             <button>&#9776;</button>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><a href="">Carros</a></li>
-                                <li><a href="login.html">Login</a></li>
+                                <li><a href="login.php">Login</a></li>
                                 <li><a href="">Cadastre-se</a></li>
                             </ul>
                         </nav>
@@ -29,7 +52,7 @@
                 </header>
                 <div class="box">
                 
-                    <form action="">
+                    <form action="cadastro-usuario.php" method="POST">
                         <fieldset>
                             <legend><b>Cadastre-se</b></legend><br>
                             <div class="inputBox">
@@ -47,10 +70,10 @@
                                 <label for="telefone" class="labelInput">Telefone</label>
                             </div>
                             <p>Funcionário:</p>
-                            <input type="radio" id="sim" name="opicao" value="true" required>
+                            <input type="radio" id="sim" name="opicao" value="sim" required>
                             <label for="sim">Sim</label>
                             <br>
-                            <input type="radio" id="nao" name="opicao" value="false" required>
+                            <input type="radio" id="nao" name="opicao" value="nao" required>
                             <label for="nao">Não</label>
                             <br><br>
                             <label for="data_nascimento"><b>Data de Nascimento:</b></label>

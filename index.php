@@ -21,8 +21,8 @@
                             <ul>
                                 <li><a href="">Home</a></li>
                                 <li><a href="">Carros</a></li>
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="cadastro-usuario.html">Cadastre-se</a></li>
+                                <li><a href="login.php">Login</a></li>
+                                <li><a href="cadastro-usuario.php">Cadastre-se</a></li>
                             </ul>
                         </nav>
 
