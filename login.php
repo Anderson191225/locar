@@ -31,9 +31,9 @@
                     <div class="login_body">
                     <div class="login_box">
                     <h2>Entrar</h2>
-                    <form action="">
+                    <form action="testeLogin.php" method = "POST">
                         <div class="input_box">
-                            <input required type="email" name="e-mail" id="email" placeholder="E-mail">
+                            <input required type="text" name="e-mail" id="email" placeholder="Email">
                             <div class="underline"></div>
 
                         </div>
@@ -43,7 +43,7 @@
 
                         </div>
                         <div class="botao">
-                        <input type="submit" value="Entrar">
+                        <input type="submit" name="submit" value="Entrar">
                         </div>
                     </form>
                     </div>
