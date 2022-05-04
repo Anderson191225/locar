@@ -1,0 +1,121 @@
+
+
+body{
+    margin: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.principal{
+    width: 100vw;
+    height: 100vh;
+    background: url('./imagens/tela.jpg');
+    background-size: cover;
+}
+
+
+/*Bara de Menu*/
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav {
+    background-color: #000000c7;
+    padding: 20 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    padding: 0 20px;
+}
+
+.logo {
+    margin: 0;
+    margin-top: 5px;
+   
+    max-width: 200px;
+    
+    
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color: rgb(144, 153, 14);
+}
+
+button:focus~ul {
+    height: 260px;
+}
+
+@media (max-width: 700px) {
+
+    nav,
+    ul {
+        flex-direction: column;
+        align-items: unset;
+    }
+    nav,li{
+        padding-top: 30px;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+      
+        align-items: flex-start;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+    
+}
+footer{
+    background-color: #000000a9;
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+    font-size: 0.9em;
+    bottom: 0;
+    width: 100%;
+}
