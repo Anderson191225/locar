@@ -5,6 +5,10 @@ body{
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     
+    
+}
+h3{
+    color: #FFF;
 }
 .principal{
     width: 100vw;

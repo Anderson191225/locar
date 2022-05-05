@@ -1,12 +1,5 @@
 <?php
-    session_start();
-    if((!isset($_SESSION['email'])==true) and (!isset($_SESSION['senha'])==true)){
-        unset($_SESSION['email']);
-        unset($_SESSION['senha']);
-        header('Location: login.php');
-
-    }
-    $logado = $_SESSION['email'];
+    
     if(isset($_POST['submit']))
     {    
  
@@ -25,7 +18,7 @@
     $numero = $_POST['numero'];
     $senha = $_POST['senha'];
     
-    $result = mysqli_query($conexao, "INSERT INTO usuario (nome, email, telefone, funcionario, cidade, rua, numero, bairro, cpf, senha, data_nascimento)VALUES ('$nome','$email','$telefone','$funcionario','$cidade','$rua','$numero','$bairro','$cpf','$senha','$data_nasc')");
+    $result = mysqli_query($conexao, "INSERT INTO usuario (nome, email, telefone, cidade, rua, numero, bairro, cpf, senha, data_nascimento)VALUES ('$nome','$email','$telefone','$cidade','$rua','$numero','$bairro','$cpf','$senha','$data_nasc')");
 
     }
 ?>
@@ -50,10 +43,10 @@
                             </div>
                             <button>&#9776;</button>
                             <ul>
-                                <li><a href="home.php">Home</a></li>
-                                <li><a href="">Carros</a></li>                                
-                                <li><a href="">Cadastrar carro</a></li>
-                                
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="">Carros</a></li>
+                                <li><a href="login.php">Login</a></li>
+                                <li><a href="">Cadastre-se</a></li>
                             </ul>
                         </nav>
                     
@@ -77,12 +70,7 @@
                                 <input type="tel" name="telefone" id="telefone" class="inputUser" required>
                                 <label for="telefone" class="labelInput">Telefone</label>
                             </div>
-                            <p>Funcionário:</p>
-                            <input type="radio" id="sim" name="opicao" value="sim" required>
-                            <label for="sim">Sim</label>
-                            <br>
-                            <input type="radio" id="nao" name="opicao" value="nao" required>
-                            <label for="nao">Não</label>
+                           
                             <br><br>
                             <label for="data_nascimento"><b>Data de Nascimento:</b></label>
                             <input type="date" name="data_nascimento" id="data_nascimento" required>

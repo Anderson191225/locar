@@ -22,7 +22,7 @@
                                 <li><a href="index.php">Home</a></li>
                                 <li><a href="">Carros</a></li>
                                 <li><a href="">Login</a></li>
-                                <li><a href="cadastro-usuario.php">Cadastre-se</a></li>
+                                <li><a href="cadastro_cliente.php">Cadastre-se</a></li>
                             </ul>
                         </nav>
                     
@@ -33,12 +33,12 @@
                     <h2>Entrar</h2>
                     <form action="testeLogin.php" method = "POST">
                         <div class="input_box">
-                            <input required type="text" name="e-mail" id="email" placeholder="Email">
+                            <input required type="text" name="email" id="email" placeholder="Email">
                             <div class="underline"></div>
 
                         </div>
                         <div class="input_box">
-                            <input required type="password" name="password" id="password" placeholder="Senha">
+                            <input required type="password" name="senha" id="password" placeholder="Senha">
                             <div class="underline"></div>          
 
                         </div>
